@@ -26,7 +26,9 @@ Project start: **2 November 2026**. Final delivery: **13 December 2026**. Offici
 [ClickUp task plan](https://app.clickup.com/1200490000005648/v/l/li/1200490000038008)
 
 ## Planned implementation
-Python, per-page PDF/TXT extraction, sentence-transformer embeddings, FAISS or Chroma, an approved language model and a Streamlit interface. The initial repository contains planning and collaboration documents; the prototype is not implemented yet.
+Proposed baseline: Python 3.11, Streamlit, pypdf, Sentence Transformers, local Chroma with cosine distance, an approved instruction model through an Ollama adapter, Pydantic, pytest and Ruff. JSONL/CSV store manifests and evaluation outputs. Exact dependency/model versions are validated and pinned in Sprint 1.
+
+See the [technical stack and architecture](docs/TECHNICAL_ARCHITECTURE.md) for the system diagram, module ownership, data contracts, chunking/retrieval settings, citation checks, abstention, testing and sprint implementation details. The repository contains planning and collaboration documents; the prototype is not implemented yet.
 
 ## Evaluation targets
 60 questions, including 15 without answers in the corpus. Target >=90% correct sources, >=90% supported answers and >=85% correct abstention. Report raw counts and denominators; keep tuning examples separate from final evaluation. These are targets, not achieved results.
