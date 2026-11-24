@@ -1,0 +1,48 @@
+{
+  "dataset_version": "v1.0",
+  "page_numbering": "page = PDF page index (equals the printed footer number in every document; DOC-01 page 1 is unnumbered)",
+  "documents": {
+    "DOC-01": {
+      "title": "HTA essentielle de l'adulte - synthese des recommandations",
+      "version": "recommandations juillet 2005 - synthese 2007",
+      "pages": 6,
+      "file": "HAS_-_Prise_en_charge_des_patients_adultes_atteints_d_hypertension_art_rielle_essentielle__Synth_se_.pdf",
+      "sha256": "925f26e3c32692ae139185d4316fab6effa99e3327c4466704914018b8cd928a"
+    },
+    "DOC-02": {
+      "title": "Parcours de soins du patient adulte vivant avec un diabete de type 2",
+      "version": "juin 2025",
+      "pages": 113,
+      "file": "HAS_-_Parcours_de_soins_du_patient_adulte_vivant_avec_un_diab_te_de_type_2__Guide__juin_2025_.pdf",
+      "sha256": "7dfde4d28d74537bafe6ad9716a687a440f3325da1c35379f5487ecd2627d775"
+    },
+    "DOC-03": {
+      "title": "Choix et durees d'antibiotherapies : angine aigue de l'enfant",
+      "version": "validee juillet 2021 - MAJ mai 2025",
+      "pages": 2,
+      "file": "HAS_-_Rhinopharyngite_aigu__et_angine_aigu__de_l_enfant__Fiche_m_mo__antibioth_rapie_.pdf",
+      "sha256": "b2dc869848be29a7764289d1d746f1354183182f9f1b802cec50a2a5b155e1e4"
+    },
+    "DOC-04": {
+      "title": "Prise en charge medicamenteuse de la douleur chez l'enfant : alternatives a la codeine",
+      "version": "janvier 2016",
+      "pages": 7,
+      "file": "HAS_-_Prise_en_charge_m_dicamenteuse_de_la_douleur_chez_l_enfant___alternatives___la_cod_ine__Fiche_.pdf",
+      "sha256": "d6926af837d0b68c46e93bb0445b9b88819fe0d53d62427ee7c55e3c2f29d9ab"
+    },
+    "DOC-05": {
+      "title": "Durees d'antibiotherapies preconisees dans les infections bacteriennes courantes - Volet 1 (rapport d'elaboration)",
+      "version": "valide juillet 2021 - MAJ mai 2025",
+      "pages": 33,
+      "file": "HAS_-_Dur_es_d_antibioth_rapies_pr_conis_es_dans_les_infections_bact_riennes_courantes__juillet_2021.pdf",
+      "sha256": "0dc377cc170575f0bd17ab2c72c2db35dad592b4601f45b9a2d5094189ff924a"
+    },
+    "DOC-06": {
+      "title": "Choix et durees d'antibiotherapies : angine aigue de l'adulte",
+      "version": "validee novembre 2016 - MAJ juillet 2021 et juillet 2024",
+      "pages": 2,
+      "file": "HAS_-_Choix_et_dur_es_d_antibioth_rapies___angine_aigu__de_l_adulte__fiche_m_mo__nov__2016__mise___j.pdf",
+      "sha256": "dbaf1f8a23bd2875e7bf2503e049ff98460f4df3374ad93bd4cc31d151fd2cdc"
+    }
+  }
+}
