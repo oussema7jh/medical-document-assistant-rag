@@ -12,3 +12,30 @@ This is a local academic prototype. **Prototype — not for medical use.** It ca
 8. Only after freezing the corpus, index and configuration, run `uv run python scripts/evaluate_retrieval.py data/final-questions.jsonl data/index corpus-v1 data/evaluation-results/final.csv --top-k <frozen-k> --max-distance <frozen-value>`. Final questions require `split: "final"` and the planned 45 answerable / 15 absent mix. The script writes raw CSV and a summary JSON. Its source metric is **retrieval recall**, not generated citation accuracy. Human reviewers must score answer citations and grounding separately.
 
 Run `uv run pytest -q` and `uv run ruff check .` before opening a pull request. The local model and Chroma data may require significant disk space. Do not place patient data or secrets in the corpus.
+
+## Launch the question interface
+
+Install the locked environment, start local Ollama in local-only mode (`OLLAMA_NO_CLOUD=1`),
+and make the supervisor-approved instruction model available in its local inventory. Set
+`RAG_OLLAMA_MODEL` to that exact model name and tag. Then run from the repository root.
+
+```console
+uv run --locked streamlit run app.py
+```
+
+Open the local URL printed by Streamlit (normally `http://127.0.0.1:8501`).
+Configure these environment variables before launch if the defaults differ from your setup.
+
+| Variable | Default | Purpose |
+|---|---|---|
+| `RAG_OLLAMA_MODEL` | Required | Exact local model name and tag approved for the project. |
+| `RAG_MANIFEST` | `data/manifest.jsonl` | Approved JSONL manifest. |
+| `RAG_INDEX_DIR` | `data/index` | Directory with the built Chroma indexes. |
+| `RAG_CORPUS_VERSION` | Choose in the sidebar | Corpus version selected at launch. |
+| `RAG_CALIBRATION` | `data/evaluation-results/calibration.json` | Development calibration report for the selected corpus version. |
+
+The sidebar can build a new index from a selection of already approved PDF/TXT files.
+Every upload must match a filename and SHA-256 in the configured manifest. For a full
+corpus build, select the full approved set. Review any unreadable pages reported after import.
+Use the development calibration command above to generate a report for the new version
+before searching it. The prototype listens on the local machine by default.
