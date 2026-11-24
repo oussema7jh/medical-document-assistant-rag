@@ -741,6 +741,7 @@ source = { editable = "." }
 dependencies = [
     { name = "chromadb" },
     { name = "fonttools" },
+    { name = "pydantic" },
     { name = "pypdf" },
     { name = "sentence-transformers" },
 ]
@@ -755,6 +756,7 @@ dev = [
 requires-dist = [
     { name = "chromadb", specifier = "==1.5.9" },
     { name = "fonttools", specifier = "==4.68.0" },
+    { name = "pydantic", specifier = "==2.14.4" },
     { name = "pypdf", specifier = "==7.1.1" },
     { name = "pytest", marker = "extra == 'dev'", specifier = "==9.2.0" },
     { name = "ruff", marker = "extra == 'dev'", specifier = "==0.17.6" },

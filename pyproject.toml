@@ -7,6 +7,7 @@ dependencies = [
   "fonttools==4.68.0",
   "sentence-transformers==5.7.0",
   "chromadb==1.5.9",
+  "pydantic==2.14.4",
 ]
 
 [project.optional-dependencies]
